@@ -1,11 +1,18 @@
 import { useState } from "react";
-import { Task, Status, STATUS_CONFIG } from "@/types/task";
+import { Task, Status,STATUS_CONFIG } from "@/types/task";
 import { TaskCard } from "./TaskCard";
 import { cn } from "@/lib/utils";
+// import { Clipboard, RefreshCw, Check, icons } from "lucide-react";
+
+// const STATUS_ARRAY = [
+//   { id: 1, label: "To Do", icons: Clipboard },
+//   { id: 2, label: "In Progress", icons: RefreshCw },
+//   { id: 3, label: "Done", icons: Check },
+// ];
 
 interface KanbanColumnProps {
   status: Status;
-  tasks: Task[];
+  tasks: Task[]; 
   onDelete: (id: string) => void;
   onDrop: (taskId: string, status: Status) => void;
   onDragStart: (e: React.DragEvent, taskId: string) => void;
@@ -46,10 +53,10 @@ export function KanbanColumn({
       )}
     >
       <div className="flex items-center gap-2 mb-3 px-1">
-        <span className="text-base">{config.emoji}</span>
-        <h3 className="text-xs font-semibold uppercase tracking-wider text-column-header">
-          {config.label}
-        </h3>
+            <span className="text-base">{config.emoji}</span>
+            <h3  className="text-xs font-semibold uppercase tracking-wider text-column-header">
+              {config.label}
+            </h3>
         <span className="ml-auto text-xs font-medium text-muted-foreground bg-secondary rounded-full px-2 py-0.5">
           {tasks.length}
         </span>

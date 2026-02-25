@@ -17,7 +17,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Plus } from "lucide-react";
+import { CalendarCheck, Check, Plus, RefreshCcw } from "lucide-react";
 
 interface AddTaskDialogProps {
   onAdd: (task: {
@@ -87,9 +87,9 @@ export function AddTaskDialog({ onAdd }: AddTaskDialogProps) {
                 <SelectValue placeholder="Status" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="todo">📋 To Do</SelectItem>
-                <SelectItem value="in-progress">🔄 In Progress</SelectItem>
-                <SelectItem value="done">✅ Done</SelectItem>
+                <SelectItem value="todo"><CalendarCheck /> To Do</SelectItem>
+                <SelectItem value="in-progress"><RefreshCcw /> In Progress</SelectItem>
+                <SelectItem value="done"><Check /> Done</SelectItem>
               </SelectContent>
             </Select>
           </div>

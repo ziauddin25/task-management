@@ -30,11 +30,11 @@ export function KanbanBoard() {
       {/* Header */}
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-1">
-          <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
+          {/* <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
             <LayoutGrid className="h-4 w-4 text-primary-foreground" />
-          </div>
+          </div> */}
           <h1 className="text-2xl font-bold text-foreground tracking-tight">
-            TaskFlow
+            Task Management 
           </h1>
         </div>
         <p className="text-sm text-muted-foreground ml-11">
