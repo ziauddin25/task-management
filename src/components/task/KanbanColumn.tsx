@@ -48,20 +48,20 @@ export function KanbanColumn({
       onDragLeave={handleDragLeave}
       onDrop={handleDrop}
       className={cn(
-        "flex flex-col rounded-xl bg-column p-3 min-h-[300px] transition-all duration-200",
+        "flex flex-col rounded-xl bg-column p-3 max-h-[75vh] min-h-[500px] overflow-scroll transition-all duration-200",
         isDragOver && "ring-2 ring-accent/50 bg-accent/5"
       )}
     >
-      <div className="flex items-center gap-2 mb-3 px-1">
-            <span className="text-base">{config.emoji}</span>
-            <h3  className="text-xs font-semibold uppercase tracking-wider text-column-header">
-              {config.label}
-            </h3>
+      <div className="flex items-center gap-2 mb-1 px-1 sticky top-0 z-999">
+        <span className="text-base">{config.emoji}</span>
+        <h3  className="text-xs font-semibold uppercase tracking-wider text-column-header">
+          {config.label}
+        </h3>
         <span className="ml-auto text-xs font-medium text-muted-foreground bg-secondary rounded-full px-2 py-0.5">
           {tasks.length}
         </span>
       </div>
-      <div className="flex flex-col gap-2 flex-1">
+      <div className="flex flex-col gap-2 flex-1 overflow-y-auto">
         {tasks.map((task) => (
           <TaskCard
             key={task.id}

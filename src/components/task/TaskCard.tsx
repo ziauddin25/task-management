@@ -24,7 +24,7 @@ export function TaskCard({ task, onDelete, onDragStart }: TaskCardProps) {
         "task-card-hover hover:shadow-md hover:border-accent/30 hover:-translate-y-0.5"
       )}
     >
-      <div className="flex items-start gap-2">
+      <div className="flex items-start gap-1">
         <GripVertical className="h-4 w-4 mt-0.5 text-muted-foreground/40 opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
         <div className="flex-1 min-w-0">
           <h4 className="text-sm font-medium text-card-foreground leading-snug">

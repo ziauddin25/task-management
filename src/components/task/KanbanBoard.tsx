@@ -37,7 +37,7 @@ export function KanbanBoard() {
             Task Management 
           </h1>
         </div>
-        <p className="text-sm text-muted-foreground ml-11">
+        <p className="text-sm text-muted-foreground">
           {allTasks.length} task{allTasks.length !== 1 ? "s" : ""} total
         </p>
       </div>
