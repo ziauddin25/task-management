@@ -3,17 +3,12 @@
 A modern and responsive Kanban-style task management application built with React, Vite, Tailwind CSS, and shadcn/ui. Users can create, organize, manage, and track tasks through an intuitive drag-and-drop interface. All task data is stored locally using Local Storage, allowing tasks to persist between browser sessions without requiring a backend.
 
 ✨ Features
-
 📋 Task Management
 
 Create new tasks with:
-
-Task Title
-
-Task Description
-
-Priority Category
-
+Task Title <br>
+Task Description <br>
+Priority Category <br>
 Task Status <br>
 🏷️ Task Categories
 
