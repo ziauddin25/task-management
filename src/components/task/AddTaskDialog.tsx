@@ -87,9 +87,9 @@ export function AddTaskDialog({ onAdd }: AddTaskDialogProps) {
                 <SelectValue placeholder="Status" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="todo"><CalendarCheck /> To Do</SelectItem>
-                <SelectItem value="in-progress"><RefreshCcw /> In Progress</SelectItem>
-                <SelectItem value="done"><Check /> Done</SelectItem>
+                <SelectItem value="todo"><CalendarCheck className="inline-flex" size={22}/> To Do</SelectItem>
+                <SelectItem value="in-progress"><RefreshCcw className="inline-flex" size={22}/> In Progress</SelectItem>
+                <SelectItem value="done"><Check className="inline-flex" size={22}/> Done</SelectItem>
               </SelectContent>
             </Select>
           </div>
